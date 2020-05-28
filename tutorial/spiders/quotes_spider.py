@@ -34,7 +34,7 @@ class QuotesSpider(scrapy.Spider):
             # 'http://quotes.toscrape.com/page/1/',
             # 'http://quotes.toscrape.com/page/2/',
             # 'https://www.esl-lab.com//intermediate/weekly-activities/',
-            'https://www.esl-lab.com/easy/',
+            'https://www.esl-lab.com/intermediate/',
         ]
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse_pages)
